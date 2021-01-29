@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navbar_main_home">
+
+    <fragment
+        android:id="@+id/navbar_main_home"
+        android:name="com.example.todoplanner.ui.fragments.HomeFragment"
+        android:label="HomeFragment"
+        app:startDestination="@id/action_homeFragment_to_overviewFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_goalsFragment"
+            app:destination="@id/navbar_main_goals" />
+        <action
+            android:id="@+id/action_homeFragment_to_timePlanFragment"
+            app:destination="@id/navbar_main_timeplan" />
+        <action
+            android:id="@+id/action_homeFragment_to_overviewFragment"
+            app:destination="@id/navbar_main_overview" />
+    </fragment>
+    <fragment
+        android:id="@+id/navbar_main_goals"
+        android:name="com.example.todoplanner.ui.fragments.GoalsFragment"
+        android:label="GoalsFragment" />
+    <fragment
+        android:id="@+id/navbar_main_timeplan"
+        android:name="com.example.todoplanner.ui.fragments.TimePlanFragment"
+        android:label="TimePlanFragment" />
+    <fragment
+        android:id="@+id/navbar_main_overview"
+        android:name="com.example.todoplanner.ui.fragments.OverviewFragment"
+        android:label="OverviewFragment" />
+</navigation>

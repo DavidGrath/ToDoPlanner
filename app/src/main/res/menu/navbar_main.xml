@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navbar_main_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/navbar_main_goals"
+        android:icon="@drawable/ic_baseline_check_24"
+        android:title="Goals" />
+    <item
+        android:id="@+id/navbar_main_timeplan"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Time Plan" />
+    <item
+        android:id="@+id/navbar_main_overview"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Overview" />
+    <item
+        android:id="@+id/navbar_main_settings"
+        android:icon="@drawable/ic_baseline_view_list_24"
+        android:title="Settings" />
+</menu>
