@@ -1,6 +1,5 @@
 package com.example.todoplanner.framework
 
-import android.content.Context
 import com.example.todoplanner.framework.daos.GoalsDao
 import com.example.todoplanner.framework.daos.TasksDao
 
@@ -14,7 +13,7 @@ import com.example.todoplanner.framework.daos.TasksDao
     companion object {
         @Volatile
         private var INSTANCE: TodoDatabase? = null
-        fun getDatabase(context: Context): TodoDatabase {
+        fun getDatabase(/*context: Context*/): TodoDatabase {
             val tempInstance = INSTANCE
             if (tempInstance != null) return tempInstance
 //            synchronized(this) {

@@ -17,7 +17,7 @@ class TimePlanViewModel(val app: Application, planner: TempPlanner) : AndroidVie
 
     init {
         useCase = TimePlanUseCase(
-                TodoRepository(TodoDatabase.getDatabase(app.applicationContext), planner)
+                TodoRepository(TodoDatabase.getDatabase(/*app.applicationContext*/), planner)
         )
     }
 

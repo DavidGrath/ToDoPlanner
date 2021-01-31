@@ -15,5 +15,7 @@ class Constants {
         const val SERVICE_TYPE = "service_type"
         const val SERVICE_TYPE_TASK_NEXT = 2
         const val SERVICE_TYPE_TASK_DONE = 3
+        const val CATEGORY_CODE = 1
+        const val CATEGORY_MISC = 2
     }
 }

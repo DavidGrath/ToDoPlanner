@@ -14,7 +14,7 @@ class TodoViewModel(val app: Application, planner: TempPlanner) : AndroidViewMod
     lateinit var homeUseCase: HomeUseCase
 
     init {
-        val database = TodoDatabase.getDatabase(app.applicationContext)
+        val database = TodoDatabase.getDatabase(/*app.applicationContext*/)
         repository = TodoRepository(database, planner)
 
     }

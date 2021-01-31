@@ -52,7 +52,23 @@ class TodoRepository(private val database: TodoDatabase, val planner: TempPlanne
     fun setTaskDone(id: Int) {
         tasksDao.setTaskStatus(id)
     }
-//    fun setTodaysTasks(tasks : List<TaskData>) {
+
+    //    fun setTodaysTasks(tasks : List<TaskData>) {
 //        tasksDao.insertTasks(tasks)
 //    }
+    fun getCategories(): List<Int> {
+        return tasksDao.getCategoriesDistinct()
+    }
+
+    fun getTotalTimeCategory(category: Int): Long {
+        return tasksDao.getCategoryTotalTime(category)
+    }
+
+    fun getTasksByCategory(category: Int): List<TaskData> {
+        return tasksDao.getTasksByCategory(category)
+    }
+
+    fun getTotalTime(): Long {
+        return tasksDao.getTotalTime()
+    }
 }
